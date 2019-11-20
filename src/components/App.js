@@ -1,16 +1,20 @@
 import React from 'react';
 
-import SearchBar from './Searchbar';
+import {SearchBar} from './index';
 
 class App extends React.Component{
   constructor(){
     super();
   }
 
+  onSearchSubmit= (text)=>{
+     console.log({text})
+  }
+
   render(){
     return(
       <div className="component">
-        <SearchBar />
+        <SearchBar callmewhensubmitsearch={this.onSearchSubmit} />
       </div>
     )
   }

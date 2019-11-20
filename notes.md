@@ -17,8 +17,11 @@
 ### app overview
   1. create a simple input text box to make call to outside api
   2. show images of the input
+  3. i make use of passing props, classes, backend api call with axios
   
+  ```
   APP ---- SEARCH-BAR
   |
   |
   IMAGE-LIST
+  ```

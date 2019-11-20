@@ -1,8 +1,8 @@
 import React from 'react';
 
 class SearchBar extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       inputText:""
     }
@@ -12,11 +12,18 @@ class SearchBar extends React.Component{
     this.setState({inputText:event.target.value});
   }
 
+  onTextSubmit(event){
+    // to stop the automatic reloading
+    event.preventDefault();
+    this.props.callmewhensubmitsearch(this.state.inputText);
+    this.setState({inputText:""})
+  }
+
   render(){
     const {ButtonContainer, FormContainer,InputSearchContainer} = styles;
     return(
       <div>
-        <form style={FormContainer}>
+        <form style={FormContainer} onSubmit={event=>this.onTextSubmit(event)}>
           <input 
           style={InputSearchContainer} 
           onChange={event=>this.onTextChange(event)}
@@ -57,4 +64,4 @@ const styles = {
     cursor:'pointer'
   }
 }
-export default SearchBar;
+export {SearchBar};

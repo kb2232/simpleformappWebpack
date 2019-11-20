@@ -1,9 +1,8 @@
-let webpack = require('webpack');
-let path = require('path');
-let HTMLwebpackPlugin = require('html-webpack-plugin');
-
-let Vendor_Library = [
-  'react','faker','react-dom'
+const webpack = require('webpack');
+const path = require('path');
+const HTMLwebpackPlugin = require('html-webpack-plugin');
+const Vendor_Library = [
+  'react','react-dom'
 ];
 
 module.exports = {
