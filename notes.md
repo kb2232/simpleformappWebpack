@@ -17,8 +17,14 @@
 ### app overview
   1. create a simple input text box to make call to outside api
   2. show images of the input
+  3. i make use of passing props, classes, backend api call with axios
+  4. api call to unsplash.com for photos
   
+  ```
   APP ---- SEARCH-BAR
   |
   |
   IMAGE-LIST
+
+  searchbar will pass an array of images to image-list component
+  ```
