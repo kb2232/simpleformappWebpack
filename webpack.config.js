@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
 const Vendor_Library = [
-  'react','react-dom'
+  'react','react-dom','axios','faker'
 ];
 
 module.exports = {

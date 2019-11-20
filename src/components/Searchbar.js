@@ -42,11 +42,11 @@ const styles = {
     flexDirection:'row',
     justifyContent:'center',
     alignItems:'center',
-    width:'90vw'
+    width:'60vw'
   },
   InputSearchContainer:{
     width:"80%",
-    height:'40px',
+    height:'30px',
     borderBottomWidth:'4px',
     borderBottomColor:'#000',
     alignSelf: 'stretch'
